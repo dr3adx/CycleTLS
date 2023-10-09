@@ -231,8 +231,8 @@ func genMap() (extMap map[string]utls.TLSExtension) {
 		"18": &utls.SCTExtension{},
 		"21": &utls.UtlsPaddingExtension{GetPaddingLen: utls.BoringPaddingStyle},
 		"22": &utls.GenericExtension{Id: 22}, // encrypt_then_mac
-		"23": &utls.UtlsExtendedMasterSecretExtension{},
-		"27": &utls.CompressCertificateExtension{
+		"23": &utls.ExtendedMasterSecretExtension{},
+		"27": &utls.UtlsCompressCertExtension{
 			Algorithms: []utls.CertCompressionAlgo{utls.CertCompressionBrotli},
 		},
 		"28": &utls.FakeRecordSizeLimitExtension{}, //Limit: 0x4001
@@ -260,7 +260,7 @@ func genMap() (extMap map[string]utls.TLSExtension) {
 		"30032": &utls.GenericExtension{Id: 0x7550, Data: []byte{0}}, //FIXME
 		"13172": &utls.NPNExtension{},
 		"17513": &utls.ApplicationSettingsExtension{
-			SupportedALPNList: []string{
+			SupportedProtocols: []string{
 				"h2",
 			},
 		},
