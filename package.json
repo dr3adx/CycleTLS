@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "directory": "git+https://github.com/dr3adx/CycleTLS.git"
+    "directory": "git+https://github.com/Danny-Dasilva/CycleTLS.git"
   },
   "keywords": [
     "cycletls",
@@ -32,9 +32,9 @@
   ],
   "license": "GPL3",
   "bugs": {
-    "url": "https://github.com/dr3adx/CycleTLS/issues"
+    "url": "https://github.com/Danny-Dasilva/CycleTLS/issues"
   },
-  "homepage": "https://github.com/dr3adx/CycleTLS#readme",
+  "homepage": "https://github.com/Danny-Dasilva/CycleTLS#readme",
   "dependencies": {
     "@types/node": "^17.0.24",
     "ws": "^7.5.7"

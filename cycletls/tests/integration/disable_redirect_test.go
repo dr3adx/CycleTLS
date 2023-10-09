@@ -8,7 +8,7 @@ import (
 	"log"
 	"testing"
 
-	cycletls "github.com/dr3adx/CycleTLS/cycletls"
+	cycletls "github.com/Danny-Dasilva/CycleTLS/cycletls"
 )
 
 func TestRedirectEnabled(t *testing.T) {

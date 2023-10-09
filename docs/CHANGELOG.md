@@ -9,41 +9,41 @@ Json Parse body in response and Cookie examples
 - Add Cookie examples in readme and update Cookie API
 - WIP golang release tags and dependabot alerts 
 ### Bug Fixes
-- [Added support for TLS Certificate Compression (causing cloudflare handshake issues)](https://github.com/dr3adx/CycleTLS/issues/103)
-- [Send Correct Frame headers](https://github.com/dr3adx/CycleTLS/issues/101)
-- [Add Temporary support for extension 17](https://github.com/dr3adx/CycleTLS/issues/100)
+- [Added support for TLS Certificate Compression (causing cloudflare handshake issues)](https://github.com/Danny-Dasilva/CycleTLS/issues/103)
+- [Send Correct Frame headers](https://github.com/Danny-Dasilva/CycleTLS/issues/101)
+- [Add Temporary support for extension 17](https://github.com/Danny-Dasilva/CycleTLS/issues/100)
 
 ## 0.0.20 - (5-16-2022)
 ### Release Highlights
 Add support for extension 17513 and repo cleanup
 ### Enhancements
 - Changed default request timeout to 15 seconds
-- [remove duplicate sources](https://github.com/dr3adx/CycleTLS/issues/85)
-- [Added support for extension 17513](https://github.com/dr3adx/CycleTLS/issues/70)
+- [remove duplicate sources](https://github.com/Danny-Dasilva/CycleTLS/issues/85)
+- [Added support for extension 17513](https://github.com/Danny-Dasilva/CycleTLS/issues/70)
 - add support for `application/pdf`, 
 ### Bug Fixes
-- [properly add grease](https://github.com/dr3adx/CycleTLS/issues/53)
+- [properly add grease](https://github.com/Danny-Dasilva/CycleTLS/issues/53)
 
 
 ## 0.0.19 - (4-20-2022)
 ### Release Highlights
 Added image and Arm support
 ### Enhancements
-- [Arm and Arm64 compilation support](https://github.com/dr3adx/CycleTLS/issues/86)
-- [Images are now Base64 encoded for Javascript](https://github.com/dr3adx/CycleTLS/issues/76)
+- [Arm and Arm64 compilation support](https://github.com/Danny-Dasilva/CycleTLS/issues/86)
+- [Images are now Base64 encoded for Javascript](https://github.com/Danny-Dasilva/CycleTLS/issues/76)
 ### Bug Fixes
-- [Fix installation dependencies](https://github.com/dr3adx/CycleTLS/issues/84)
+- [Fix installation dependencies](https://github.com/Danny-Dasilva/CycleTLS/issues/84)
 - Don't crash if golang websocket server receives a normal http request
 - Update npm dependencies
-- Added site support from updates to [fhttp](https://github.com/dr3adx/fhttp) and [utls](https://github.com/dr3adx/utls)
+- Added site support from updates to [fhttp](https://github.com/Danny-Dasilva/fhttp) and [utls](https://github.com/Danny-Dasilva/utls)
 
 ## 0.0.18 - (3-26-2022)
 ### Release Highlights
 Swap Golang and TS server
 ### Enhancements
-- Golang is now handles incoming requests, temporary solution till [this](https://github.com/dr3adx/CycleTLS/issues/55) is addressed 
+- Golang is now handles incoming requests, temporary solution till [this](https://github.com/Danny-Dasilva/CycleTLS/issues/55) is addressed 
 ### Bug Fixes
-- [Don't kill process if it does not exist](https://github.com/dr3adx/CycleTLS/pull/71)
+- [Don't kill process if it does not exist](https://github.com/Danny-Dasilva/CycleTLS/pull/71)
 
 ## 0.0.17 - (3-14-2022)
 ### Release Highlights
@@ -55,7 +55,7 @@ Fix fhttp handshake
 ### Release Highlights
 Fix setting request headers
 ### Bug Fixes
-- [Fix request Headers not being set](https://github.com/dr3adx/CycleTLS/issues/60)
+- [Fix request Headers not being set](https://github.com/Danny-Dasilva/CycleTLS/issues/60)
 ### Enhancements
 - Add request header integration test
 
@@ -67,24 +67,24 @@ Support Ordered Request Headers
 - Refactor error handling 
 ### Enhancements
 - Ordered Request Headers
-- [Gzip/brotly/deflate decoding](https://github.com/dr3adx/CycleTLS/issues/48)
-- [Queue requests in case of Process restart](https://github.com/dr3adx/CycleTLS/issues/50)
+- [Gzip/brotly/deflate decoding](https://github.com/Danny-Dasilva/CycleTLS/issues/48)
+- [Queue requests in case of Process restart](https://github.com/Danny-Dasilva/CycleTLS/issues/50)
 
 ## 0.0.14 - (10-06-2021)
 ### Release Highlights
 Bugfix Ja3 Token Parsing and better error handling
 ### Bug Fixes
-- Fix Stack overlflow if token is unsuported [Some Ja3 strings causing stackoverflow](https://github.com/dr3adx/CycleTLS/issues/51)
-- Address Ticket [Spoofed TLS/JA3 fingerprint is detected by some sites](https://github.com/dr3adx/CycleTLS/issues/47)
-- Address Ticket [Set User-Agent for the CONNECT request from the config](https://github.com/dr3adx/CycleTLS/issues/46)
+- Fix Stack overlflow if token is unsuported [Some Ja3 strings causing stackoverflow](https://github.com/Danny-Dasilva/CycleTLS/issues/51)
+- Address Ticket [Spoofed TLS/JA3 fingerprint is detected by some sites](https://github.com/Danny-Dasilva/CycleTLS/issues/47)
+- Address Ticket [Set User-Agent for the CONNECT request from the config](https://github.com/Danny-Dasilva/CycleTLS/issues/46)
 
 ## 0.0.13 - (09-16-2021)
 ### Release Highlights
 Performance improvements and Better Ja3 Token Parsing 
 ### Bug Fixes
-- Fix Performance issue relating to worker pool [Related Ticket](https://github.com/dr3adx/CycleTLS/issues/41)
-- Address Ticket (fix extension 43) [error: tls: server selected unsupported group](https://github.com/dr3adx/CycleTLS/issues/43)
-- Address Ticket [ fatal error: stack overflow (added support for extensions 22 49 50) ](https://github.com/dr3adx/CycleTLS/issues/42)
+- Fix Performance issue relating to worker pool [Related Ticket](https://github.com/Danny-Dasilva/CycleTLS/issues/41)
+- Address Ticket (fix extension 43) [error: tls: server selected unsupported group](https://github.com/Danny-Dasilva/CycleTLS/issues/43)
+- Address Ticket [ fatal error: stack overflow (added support for extensions 22 49 50) ](https://github.com/Danny-Dasilva/CycleTLS/issues/42)
 ### Enhancements
 - Updated Documentation
 - Updated Integration tests for new token fixes
@@ -95,20 +95,20 @@ Performance improvements and Better Ja3 Token Parsing
 Timeout and Disable redirect integration
 ### Bug Fixes
 - Change to Stable node version V 14 for release
-- Address Ticket [Golang cmd window not hiding](https://github.com/dr3adx/CycleTLS/issues/30)
-- Address Ticket [ Method in CycleTLS.Do isn't used ](https://github.com/dr3adx/CycleTLS/issues/33)
+- Address Ticket [Golang cmd window not hiding](https://github.com/Danny-Dasilva/CycleTLS/issues/30)
+- Address Ticket [ Method in CycleTLS.Do isn't used ](https://github.com/Danny-Dasilva/CycleTLS/issues/33)
 ### Enhancements
-- Add timeout [ Add a timeout feature ](https://github.com/dr3adx/CycleTLS/issues/31)
-- Optionally disable auto redirect [ Disable auto-redirect ](https://github.com/dr3adx/CycleTLS/issues/32)
+- Add timeout [ Add a timeout feature ](https://github.com/Danny-Dasilva/CycleTLS/issues/31)
+- Optionally disable auto redirect [ Disable auto-redirect ](https://github.com/Danny-Dasilva/CycleTLS/issues/32)
 - Add integration tests for timeout and redirect
-- Make client exportable [ Make client interface exportable for easy use ](https://github.com/dr3adx/CycleTLS/pull/37)
+- Make client exportable [ Make client interface exportable for easy use ](https://github.com/Danny-Dasilva/CycleTLS/pull/37)
 - Update CI release with stable node version
 
 ## 0.0.11 - (06-6-2021)
 ### Release Highlights
 Memory leak fixes and Clean Exit 
 ### Bug Fixes
-- Address Ticket [Memory Leak on Exit ](https://github.com/dr3adx/CycleTLS/issues/28) with added unit test
+- Address Ticket [Memory Leak on Exit ](https://github.com/Danny-Dasilva/CycleTLS/issues/28) with added unit test
 - General Linting on yaml files
 
 ### Enhancements
@@ -120,7 +120,7 @@ Memory leak fixes and Clean Exit
 ### Release Highlights
 New Error Handling and bufixes
 ### Bug Fixes
-- Address Ticket [initCycleTLS is not a function](https://github.com/dr3adx/CycleTLS/issues/26) with added unit test
+- Address Ticket [initCycleTLS is not a function](https://github.com/Danny-Dasilva/CycleTLS/issues/26) with added unit test
 - Add type hints in TLS transport map
 
 ### Enhancements

@@ -1,7 +1,7 @@
 package cycletls
 
 import (
-	http "github.com/dr3adx/fhttp"
+	http "github.com/Danny-Dasilva/fhttp"
 
 	"time"
 
