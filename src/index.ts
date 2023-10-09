@@ -35,6 +35,7 @@ export interface CycleTLSRequestOptions {
   timeout?: number;
   disableRedirect?: boolean;
   headerOrder?: string[];
+  mimic?: string;
 }
 
 export interface CycleTLSResponse {
