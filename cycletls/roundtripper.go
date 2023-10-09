@@ -9,9 +9,9 @@ import (
 	"strings"
 	"sync"
 
-	http "github.com/Danny-Dasilva/fhttp"
-	http2 "github.com/Danny-Dasilva/fhttp/http2"
-	utls "github.com/Danny-Dasilva/utls"
+	http "github.com/dr3adx/fhttp"
+	http2 "github.com/dr3adx/fhttp/http2"
+	utls "github.com/dr3adx/utls"
 	"golang.org/x/net/proxy"
 )
 
@@ -34,7 +34,7 @@ func (rt *roundTripper) RoundTrip(req *http.Request) (*http.Response, error) {
 	// Fix this later for proper cookie parsing
 	for _, properties := range rt.Cookies {
 		req.AddCookie(&http.Cookie{
-			Name: properties.Name,
+			Name:       properties.Name,
 			Value:      properties.Value,
 			Path:       properties.Path,
 			Domain:     properties.Domain,

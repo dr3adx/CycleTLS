@@ -6,19 +6,19 @@
 	<img src="docs/media/Banner.svg" alt="CycleTLS"/>
 	<br>
 	
-Currently a WIP and in Active development. See the ![Projects](https://github.com/Danny-Dasilva/CycleTLS/projects/1) Tab for more info
+Currently a WIP and in Active development. See the ![Projects](https://github.com/dr3adx/CycleTLS/projects/1) Tab for more info
 
 	
 	
 
-![build](https://github.com/Danny-Dasilva/CycleTLS/actions/workflows/test_golang.yml/badge.svg)
-[![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg)](http://godoc.org/github.com/Danny-Dasilva/CycleTLS/cycletls) 
-[![license](https://img.shields.io/github/license/Danny-Dasilva/CycleTLS.svg)](https://github.com/Danny-Dasilva/CycleTLS/blob/main/LICENSE)
-[![Go Report Card](https://goreportcard.com/badge/github.com/Danny-Dasilva/CycleTLS/cycletls)](https://goreportcard.com/report/github.com/Danny-Dasilva/CycleTLS/cycletls)
+![build](https://github.com/dr3adx/CycleTLS/actions/workflows/test_golang.yml/badge.svg)
+[![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg)](http://godoc.org/github.com/dr3adx/CycleTLS/cycletls) 
+[![license](https://img.shields.io/github/license/dr3adx/CycleTLS.svg)](https://github.com/dr3adx/CycleTLS/blob/main/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/dr3adx/CycleTLS/cycletls)](https://goreportcard.com/report/github.com/dr3adx/CycleTLS/cycletls)
 [![npm version](https://img.shields.io/npm/v/cycletls.svg)](https://www.npmjs.org/package/cycletls)
 </div>
 
-If you have a API change or feature request feel free to open an [Issue](https://github.com/Danny-Dasilva/CycleTLS/issues/new/choose)
+If you have a API change or feature request feel free to open an [Issue](https://github.com/dr3adx/CycleTLS/issues/new/choose)
 
 
 
@@ -66,7 +66,7 @@ $ npm install cycletls
 Golang
 
 ```bash
-$ go get github.com/Danny-Dasilva/CycleTLS/cycletls 
+$ go get github.com/dr3adx/CycleTLS/cycletls 
 ```
 
 # Usage 
@@ -108,7 +108,7 @@ package main
 
 import (
 	"log"
-	"github.com/Danny-Dasilva/CycleTLS/cycletls"
+	"github.com/dr3adx/CycleTLS/cycletls"
 )
 
 func main() {
@@ -149,7 +149,7 @@ initCycleTLS().then((cycleTLS) => {});
 
 ```go
 import (
-	"github.com/Danny-Dasilva/CycleTLS/cycletls"
+	"github.com/dr3adx/CycleTLS/cycletls"
 )
 
 //The `Init` function initializes golang channels to process requests. 
@@ -323,7 +323,7 @@ Set module-aware mode
 
 Install golang dependencies
 
-`go get github.com/Danny-Dasilva/CycleTLS/cycletls`
+`go get github.com/dr3adx/CycleTLS/cycletls`
 
 install npm packages
 
@@ -446,7 +446,7 @@ const initCycleTLS = require("cycletls");
 package main
 
 import (
-    "github.com/Danny-Dasilva/CycleTLS/cycletls"
+    "github.com/dr3adx/CycleTLS/cycletls"
 )
 
 func main() {
@@ -480,7 +480,7 @@ func main() {
 ```
 
 
-Feel free to open an [Issue](https://github.com/Danny-Dasilva/CycleTLS/issues/new/choose) with a feature request for specific file type support. 
+Feel free to open an [Issue](https://github.com/dr3adx/CycleTLS/issues/new/choose) with a feature request for specific file type support. 
 </details>
 
 
@@ -606,7 +606,7 @@ package main
 import (
     "encoding/base64"
     "os"
-    "github.com/Danny-Dasilva/CycleTLS/cycletls"
+    "github.com/dr3adx/CycleTLS/cycletls"
 )
 
 func main() {
@@ -642,7 +642,7 @@ func main() {
 
 Additional file type support is planned.
 
-Feel free to open an [Issue](https://github.com/Danny-Dasilva/CycleTLS/issues/new/choose) with a feature request for specific file type support. 
+Feel free to open an [Issue](https://github.com/dr3adx/CycleTLS/issues/new/choose) with a feature request for specific file type support. 
 </details>
 
 ### Cross Compiling for other platforms
@@ -660,7 +660,7 @@ $ GOOS=linux GOARCH=arm go build -o ./dist/index ./golang && chmod +x ./dist/ind
 
 With the above command you can simply run `./index` and CycleTLS should function as intended.
 
-Use this [gist](https://gist.github.com/asukakenji/f15ba7e588ac42795f421b48b8aede63) for different Operating Systems that support cross-compilation and feel free to open an [Issue](https://github.com/Danny-Dasilva/CycleTLS/issues/new/choose) with a feature request for your specific operating system use case. 
+Use this [gist](https://gist.github.com/asukakenji/f15ba7e588ac42795f421b48b8aede63) for different Operating Systems that support cross-compilation and feel free to open an [Issue](https://github.com/dr3adx/CycleTLS/issues/new/choose) with a feature request for your specific operating system use case. 
 
 </details>
 

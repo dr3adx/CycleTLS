@@ -8,7 +8,7 @@ import (
 	"log"
 	"testing"
 
-	cycletls "github.com/Danny-Dasilva/CycleTLS/cycletls"
+	cycletls "github.com/dr3adx/CycleTLS/cycletls"
 )
 
 func TestDeflateDecoding(t *testing.T) {
