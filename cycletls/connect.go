@@ -7,14 +7,15 @@ import (
 	"crypto/tls"
 	"encoding/base64"
 	"errors"
-	http "github.com/Danny-Dasilva/fhttp"
-	http2 "github.com/Danny-Dasilva/fhttp/http2"
-	"golang.org/x/net/proxy"
 	"io"
 	"net"
 	"net/url"
 	"strconv"
 	"sync"
+
+	http "github.com/dr3adx/fhttp"
+	http2 "github.com/dr3adx/fhttp/http2"
+	"golang.org/x/net/proxy"
 )
 
 // connectDialer allows to configure one-time use HTTP CONNECT client
@@ -194,8 +195,8 @@ func (c *connectDialer) DialContext(ctx context.Context, network, address string
 			}
 		} else {
 			tlsConf := tls.Config{
-				NextProtos: []string{"h2", "http/1.1"},
-				ServerName: c.ProxyURL.Hostname(),
+				NextProtos:         []string{"h2", "http/1.1"},
+				ServerName:         c.ProxyURL.Hostname(),
 				InsecureSkipVerify: true,
 			}
 			tlsConn, err := tls.Dial(network, c.ProxyURL.Host, &tlsConf)

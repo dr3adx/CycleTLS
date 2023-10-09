@@ -3,8 +3,6 @@ package cycletls
 import (
 	"encoding/json"
 	"flag"
-	http "github.com/Danny-Dasilva/fhttp"
-	"github.com/gorilla/websocket"
 	"io/ioutil"
 	"log"
 	nhttp "net/http"
@@ -12,6 +10,9 @@ import (
 	"os"
 	"runtime"
 	"strings"
+
+	http "github.com/dr3adx/fhttp"
+	"github.com/gorilla/websocket"
 )
 
 // Options sets CycleTLS client options
@@ -35,14 +36,14 @@ type cycleTLSRequest struct {
 	Options   Options `json:"options"`
 }
 
-//rename to request+client+options
+// rename to request+client+options
 type fullRequest struct {
 	req     *http.Request
 	client  http.Client
 	options cycleTLSRequest
 }
 
-//Response contains Cycletls response data
+// Response contains Cycletls response data
 type Response struct {
 	RequestID string
 	Status    int
@@ -50,7 +51,7 @@ type Response struct {
 	Headers   map[string]string
 }
 
-//JSONBody converts response body to json
+// JSONBody converts response body to json
 func (re Response) JSONBody() map[string]interface{} {
 	var data map[string]interface{}
 	err := json.Unmarshal([]byte(re.Body), &data)
@@ -60,7 +61,7 @@ func (re Response) JSONBody() map[string]interface{} {
 	return data
 }
 
-//CycleTLS creates full request and response
+// CycleTLS creates full request and response
 type CycleTLS struct {
 	ReqChan  chan fullRequest
 	RespChan chan Response

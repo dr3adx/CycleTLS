@@ -35,7 +35,7 @@ Added image and Arm support
 - [Fix installation dependencies](https://github.com/Danny-Dasilva/CycleTLS/issues/84)
 - Don't crash if golang websocket server receives a normal http request
 - Update npm dependencies
-- Added site support from updates to [fhttp](https://github.com/Danny-Dasilva/fhttp) and [utls](https://github.com/Danny-Dasilva/utls)
+- Added site support from updates to [fhttp](https://github.com/dr3adx/fhttp) and [utls](https://github.com/Danny-Dasilva/utls)
 
 ## 0.0.18 - (3-26-2022)
 ### Release Highlights
