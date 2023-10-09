@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	utls "github.com/Danny-Dasilva/utls"
 	"github.com/andybalholm/brotli"
+	utls "github.com/refraction-networking/utls"
 )
 
 const (
