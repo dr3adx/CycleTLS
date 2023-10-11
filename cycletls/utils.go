@@ -261,7 +261,7 @@ func genMap() (extMap map[string]utls.TLSExtension) {
 		"13172": &utls.NPNExtension{},
 		"17513": &utls.ApplicationSettingsExtension{
 			SupportedProtocols: []string{
-				"h2",
+				"http/1.1",
 			},
 		},
 		"65281": &utls.RenegotiationInfoExtension{
