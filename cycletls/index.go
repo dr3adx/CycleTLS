@@ -169,6 +169,8 @@ func processRequest(request cycleTLSRequest) (result fullRequest) {
 }
 
 func dispatcher(res fullRequest) (response Response, err error) {
+	defer res.client.CloseIdleConnections()
+
 	resp, err := res.client.Do(res.req)
 	if err != nil {
 
